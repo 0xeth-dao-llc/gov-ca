@@ -1,0 +1,42 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\BlockChain\\Project\\Reggie Projects\\Orb3 Nft and Dao contract\\Dao\\contracts\\DAO.sol": {
+      "lastModificationDate": 1703186898005,
+      "contentHash": "5c7ecca8c240d527ed47f262109c8928",
+      "sourceName": "contracts/DAO.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OrbDAO"
+      ]
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/DAO.sol:OrbDAO": {
+        "src": "contracts\\DAO.sol:4",
+        "version": {
+          "withMetadata": "02a8026ea022423b1a1f27903749f01fc610490d7e0826433f51f7d7bb78a549",
+          "withoutMetadata": "8c01b5298a5476a11800b73120409dad8d3a72efa7d88ecbe74da46a92fee62d",
+          "linkedWithoutMetadata": "8c01b5298a5476a11800b73120409dad8d3a72efa7d88ecbe74da46a92fee62d"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "init()",
+          "createProposal(string)",
+          "vote(uint256,bool)",
+          "executeProposal(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "admin",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "OrbDAO",
+              "src": "contracts\\DAO.sol:6"
+            },
+            {
+              "label": "proposalCount",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "OrbDAO",
+              "src": "contracts\\DAO.sol:7"
+            },
+            {
+              "label": "proposals",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_uint256,t_struct(Proposal)25_storage)",
+              "contract": "OrbDAO",
+              "src": "contracts\\DAO.sol:8"
+            },
+            {
+              "label": "votes",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "OrbDAO",
+              "src": "contracts\\DAO.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_struct(Proposal)25_storage)": {
+              "label": "mapping(uint256 => struct OrbDAO.Proposal)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Proposal)25_storage": {
+              "label": "struct OrbDAO.Proposal",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "description",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "forVotes",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "againstVotes",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "executed",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    }
+  ]
+}
